@@ -1,0 +1,569 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+.colored-gradient-text{
+    background: linear-gradient(to right, #49c1cc, #0f4ea3 20%);
+    color: transparent !important;
+    -webkit-background-clip: text;
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#192c46;
+    text-align: center;
+    margin-top: 200px;
+}
+h5{
+    text-align: center;
+    color: rgb(132, 132, 132);
+    font-weight: 400;
+}
+.button-1-button-jelajahi{
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0f4ea3;
+    border: 1px solid #0f4ea3;
+    width: 119px;
+    height: 25px;
+}
+.button1{
+    margin-top: 80px;
+    margin-bottom: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pt-1{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+.header-2{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+[class^="sub-header"]{
+    color: #0f4ea3;
+    height: 0;
+    font-size: 13px;
+    font-family: 'PT sans';
+}
+
+[class^="pra-header"]{
+    height: 0;
+    letter-spacing: 2.2px;
+    font-size: 21px;
+    font-family: 'PT sans';
+}
+
+/* .header-2 > h3{
+    height: 0;
+    letter-spacing: 2.2px;
+    font-family: 'PT sans';
+    font-size: 25px;
+} */
+
+.header-3{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PT sans';
+    margin-top: 195px;
+    margin-bottom: 100px;
+}
+/* .header-3 > h3{
+    height: 0;
+    letter-spacing: 1.7px;
+    text-align: center;
+    font-family: 'PT sans';
+    font-size: 25px;
+} */
+.img-storage{
+    display: flex;
+    justify-content: space-between;
+}
+.img-group-1{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+    justify-content: flex-start;
+}
+
+.img-group-2{
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+    justify-content: flex-end;
+}
+
+.image-item{
+    width: 48vw;
+    height: 100%;
+}
+
+.filter1{
+    position: absolute;
+    background-color: #388bff;
+    opacity: 0.5;
+    width: 275px;
+    height: 180px;
+}
+
+.filter2{
+    position: absolute;
+    right: 0;
+    background-color: #388bff;
+    opacity: 0.5;
+    width: 275px;
+    height: 180px;
+}
+
+.filter3{
+    position: absolute;
+    right: 0;
+    background-color: #388bff;
+    opacity: 0.5;
+    width: 275px;
+    height: 180px;
+}
+
+.filterO{
+    position: absolute;
+    background-color: #ffaa00;
+    opacity: 0.5;
+    width: 275px;
+    height: 180px;
+}
+
+.filterO2{
+    position: absolute;
+    background-color: #ffaa00;
+    opacity: 0.5;
+    width: 275px;
+    height: 180px;
+}
+
+.filterO3{
+    position: absolute;
+    right: 0;
+    background-color: #ffaa00;
+    opacity: 0.5;
+    width: 275px;
+    height: 180px;
+}
+
+.header-4{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 250px;
+    margin-bottom: 110px;
+}
+
+[class^="filter"]{
+    width: 48.5vw;
+    height: 100%;
+}
+
+.img-ft-filter{
+    position: relative;
+    background-color: aqua;
+}
+
+.cards-container{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+[class^="card-item"]{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    background-color: #ffffff;
+    width: 220px;
+    height: 220px;
+    box-shadow: 0px 0px 20px rgb(206, 206, 206);
+    padding: 32px;
+}
+
+[class^="card-header"]{
+    color: #0f4ea3;
+    font-family: 'PT SANS';
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+[class^="card-desc"]{
+    color: rgb(132, 132, 132);
+    font-family: 'PT SANS';
+    font-size: 13px;
+}
+
+.header-5{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 250px;
+    margin-bottom: 110px;
+}
+
+[class^="img-jurusan"]{
+    width: 200px;
+    height: 200px;
+}
+
+[class^="jurusan"]{
+    display: flex;
+    flex-flow: row;
+    gap: 120px;
+}
+
+.jurusan{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+
+.jurusan-2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.header-jurusan-tjkt{
+    width: 200px;
+}
+
+[class^="number-jurusan"]{
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: 'PT SANS';
+    color: rgb(220, 220, 220);
+}
+
+[class^="header-jurusan"]{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-family: 'PT SANS';
+    color: rgb(0, 0, 0);
+}
+
+[class^="list-par-jurusan"]{
+    display: flex;
+    flex-flow: column;
+    padding-left: 15px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-family: 'PT SANS';
+    gap: 10px;
+    color: rgb(132, 132, 132);
+}
+
+
+[class^="description"]{
+    display: flex;
+    flex-flow: column;
+
+}
+
+[class^="more"]{
+    color: gold;
+    border: 2px solid gold;
+    padding: 7px;
+    width: 150px;
+    font-family: 'PT SANS';
+}
+
+.p965-cards-container{
+    display: none;
+}
+
+.jurusan-par{
+    display: flex;
+    flex-flow: column;
+    margin: 0px 20%;
+}
+
+.header-6{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 250px;
+    margin-bottom: 110px;
+}
+
+.comments{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 250px;
+    overflow: hidden; /* Ensure overflow is hidden */
+    margin-bottom: 200px;
+}
+
+[class^="comment-"]{
+    position: absolute;
+    transform: translateX(calc(450px * var(--i) + var(--r)));
+    width: 450px;
+    height: 220px;
+    box-shadow: 0px 0px 20px #d1d1d1;
+    font-family: 'PT SANS';
+    display: flex;
+    flex-flow: column;
+}
+
+[class^="profile-image"]{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+[class^="star-name"]{
+    display: flex;
+    flex-flow: row;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+[class^="img-rank-name"]{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+[class^="rank"]{
+    font-size: 13px;
+    letter-spacing: 0.9px;
+    color: gray;
+}
+
+[class^="long-name"]{
+    font-size: 20px;
+}
+
+.left-move{
+    background-color: rgb(199, 199, 199);
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 50%;
+    opacity: 0.1;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    position: absolute;
+    left: 5%;
+    transition: all 1s linear;
+    z-index: 5;
+}
+
+.left-move:hover{
+    transition: all 0.5s linear;
+    background-color: #111d2e;
+    opacity: 0.8;
+}
+
+
+.right-move{
+    background-color: rgb(199, 199, 199);
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 50%;
+    opacity: 0.1;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    position: absolute;
+    right: 5%;
+    z-index: 5;
+}
+
+.right-move:hover{
+    transition: all 0.5s linear;
+    background-color: #111d2e;
+    opacity: 0.8;
+}
+
+
+/* CSS Teleport */
+
+@media only screen and (min-width:965px) {
+    [class^="filter"]{
+    width: 48vw;
+    height: 100%;
+    }
+
+    .image-item{
+    width: 48vw !important;
+    height: 100% !important;
+    }
+}
+
+@media only screen and (min-width:700px) {
+
+    [class^="sub-header-"]{
+        font-size: 20px;
+    }
+
+    [class^="pra-header-"]{
+        font-size: 32px;
+    }
+
+    .desc-1{
+        font-size: 18px;
+    }
+
+    h1{font-size: 50px;}
+
+    .desc-main-header{
+        font-size: 21px;
+    }
+
+}
+
+@media only screen and (max-width:968px) {
+    [class^="filter"]{
+    width: 48vw;
+    height: 100%;
+    }
+
+    .image-item{
+    width: 48vw !important;
+    height: 100% !important;
+    }
+
+    .cards-container{
+    display: none;
+    }   
+
+    .p965-cards-container{
+    display: grid;
+    padding: 0px 10%;
+    row-gap: 20%;
+    column-gap: 10%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    }
+
+    [class^="p965-card-item"]{
+        width: 220px;
+        height: 150px;
+        box-shadow: 0px 0px 20px rgb(206, 206, 206);
+        gap: 20px;
+        background-color: #ffffff;
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .p965-card-item-3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 90% !important;
+        height: 200px;
+    }
+
+    [class^="p965-card-header"]{
+    color: #0f4ea3;
+    font-family: 'PT SANS';
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 25px;
+    }
+
+    [class^="p965-card-desc"]{
+        color: rgb(132, 132, 132);
+        font-family: 'PT SANS';
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .p965-cards-container{
+    display: none;
+    }   
+
+    .cards-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    }
+
+    [class^="card-item"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    gap: 20px;
+    background-color: #ffffff;
+    width: 70%;
+    height: 220px;
+    box-shadow: 0px 0px 20px rgb(206, 206, 206);
+    padding: 32px;
+    }
+
+    [class^="jurusan"]{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    }
+
+    .jurusan-2{
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    [class^="comment-"]{
+        width: 90%;
+    }
+
+    .star{
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        font-size: 17px;
+    }
+}

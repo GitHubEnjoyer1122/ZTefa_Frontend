@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Start Footer */
+
+footer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: #192c46;
+    font-family: 'PT SANS' !important;
+    letter-spacing: 0.8px;
+}
+
+.logo-tefa{
+    width: 230px;
+    height: 120px;
+}
+
+.kontak{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.our-contact{
+    display: flex;
+    flex-flow: column;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.our-contact::after{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background-color: #192c46;
+    margin-top: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    width: 250px;
+}
+
+.social-media{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+[class^="sosmed-"]{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+
+.address{
+    display: flex;
+    flex-flow: row;
+}
+
+.copyright{
+    margin-top: 100px;
+    font-size: 11px;
+}
+
+/* End */
+
+@media only screen and (min-width: 765px) {
+    footer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: #192c46;
+    font-family: 'PT SANS' !important;
+    letter-spacing: 0.8px;
+}
+
+.con-logs{
+    display: flex;
+    flex-flow: row;
+}
+
+.logo-tefa{
+    width: 230px;
+    height: 120px;
+}
+
+.kontak{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.our-contact{
+    display: flex;
+    flex-flow: column;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.our-contact::after{
+    content: '';
+    width: 440px;
+    height: 2px;
+    background-color: #192c46;
+    margin-top: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+    width: 500px;
+}
+
+.address{
+    width: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.address > i{
+    margin-top: 2px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.social-media{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.copyright{
+    margin-top: 100px;
+    font-size: 16px;
+}
+}
