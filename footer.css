@@ -12,7 +12,6 @@ footer{
     align-items: center;
     justify-content: center;
     color: #192c46;
-    font-family: 'PT SANS' !important;
     letter-spacing: 0.8px;
 }
 
@@ -35,7 +34,8 @@ footer{
     justify-self: center;
     align-self: center;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: 'Poppins';
 }
 
 .our-contact::after{
@@ -49,35 +49,47 @@ footer{
 .contact{
     display: flex;
     flex-flow: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     gap: 10px;
     width: 250px;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
 .social-media{
     display: flex;
     flex-flow: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
     gap: 10px;
 }
 
 [class^="sosmed-"]{
     display: flex;
     flex-flow: row;
+
     gap: 10px;
 }
 
 .address{
     display: flex;
     flex-flow: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    text-align: center;
+
+    gap: 18px;
 }
 
 .copyright{
     margin-top: 100px;
-    font-size: 11px;
+    font-size: 10.2px;
+    font-weight: 500;
+    font-family: 'Plus Jakarta Sans';
 }
 
 /* End */
@@ -89,18 +101,20 @@ footer{
     align-items: center;
     justify-content: center;
     color: #192c46;
-    font-family: 'PT SANS' !important;
     letter-spacing: 0.8px;
+    margin: 0 60px;
 }
 
 .con-logs{
     display: flex;
     flex-flow: row;
+    gap: 100px;
 }
 
 .logo-tefa{
     width: 230px;
     height: 120px;
+    margin-top: 40px;
 }
 
 .kontak{
@@ -122,7 +136,7 @@ footer{
 
 .our-contact::after{
     content: '';
-    width: 440px;
+    width: 519px;
     height: 2px;
     background-color: #192c46;
     margin-top: 10px;
@@ -134,8 +148,9 @@ footer{
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    gap: 10px;
+    gap: 50px;
     width: 500px;
+    font-size: 13px;
 }
 
 .address{
@@ -164,4 +179,36 @@ footer{
     margin-top: 100px;
     font-size: 16px;
 }
+}
+
+@media only screen and (min-width: 765px) and (max-width: 880px) {
+
+    .contact{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        width: 250px;
+        font-family: 'Poppins';
+        font-weight: 400;
+    }
+
+    .our-contact::after{
+        content: '';
+        width: 260px;
+        height: 2px;
+        background-color: #192c46;
+        margin-top: 10px;
+    }
+
+    .address{
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    
+        gap: 18px;
+    }
 }

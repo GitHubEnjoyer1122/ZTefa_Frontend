@@ -3,7 +3,14 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-color: #fafafa;
+    /* background-color: #49c1cc; */
 }
+
+/* div, svg, h1, h5, button, img{
+    background-color: #433925;
+    border: 1px solid blue; 
+
+}  */
 
 .colored-gradient-text{
     background: linear-gradient(to right, #49c1cc, #0f4ea3 20%);
@@ -13,25 +20,46 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.main-header{
+    display: flex;
+    flex-flow: column ;
+    align-items: center;
+    justify-content: center;
+}
+
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins';
+    font-weight: 700;
     color:#192c46;
     text-align: center;
     margin-top: 200px;
 }
-h5{
+
+.desc-main-header{
     text-align: center;
-    color: rgb(132, 132, 132);
+    font-family: "Plus Jakarta Sans";
+    color: #707070;
     font-weight: 400;
 }
+
 .button-1-button-jelajahi{
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #0f4ea3;
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 11px;
+    color: #0F4EA3;
     border: 1px solid #0f4ea3;
-    width: 119px;
-    height: 25px;
+    width: 200px;
+    height: 35px;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: all 0.5s linear;
 }
+
+.button-1-button-jelajahi:hover{
+    transition: all 0.5s linear;
+    background-color: rgb(221, 221, 221);
+}
+
 .button1{
     margin-top: 80px;
     margin-bottom: 225px;
@@ -45,39 +73,77 @@ h5{
     align-items: center;
     justify-content: center;
 }
+
 .header-2{
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    height: 205px;
+}
+
+[class^="decoration-polka-"]{
+    width: 90px;
+    height: 90px;
+}
+
+.decoration-polka-1{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.decoration-polka-2{
+    position: absolute;
+    top: 950px;
+    left: 220px;
 }
 
 [class^="sub-header"]{
     color: #0f4ea3;
     height: 0;
-    font-size: 13px;
-    font-family: 'PT sans';
+    font-size: 12px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
 }
 
 [class^="pra-header"]{
     height: 0;
     letter-spacing: 2.2px;
-    font-size: 21px;
-    font-family: 'PT sans';
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.desc-1{
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    color: #616161;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    width: 600px;
+    text-align-last: center;
 }
 
 /* .header-2 > h3{
     height: 0;
     letter-spacing: 2.2px;
-    font-family: 'PT sans';
+    font-family: 'Poppins';
     font-size: 25px;
 } */
+
+.pra-header-2{
+    margin-bottom: 65px;
+}
 
 .header-3{
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    font-family: 'PT sans';
+    font-family: 'Poppins';
     margin-top: 195px;
     margin-bottom: 100px;
 }
@@ -85,7 +151,7 @@ h5{
     height: 0;
     letter-spacing: 1.7px;
     text-align: center;
-    font-family: 'PT sans';
+    font-family: 'Poppins';
     font-size: 25px;
 } */
 .img-storage{
@@ -204,17 +270,36 @@ h5{
 
 [class^="card-header"]{
     color: #0f4ea3;
-    font-family: 'PT SANS';
-    letter-spacing: 2px;
+    font-family: 'Poppins';
+    letter-spacing: 0.85px;
     font-weight: 700;
-    font-size: 15px;
-    margin-top: 25px;
+    font-size: 14px;
 }
 
 [class^="card-desc"]{
-    color: rgb(132, 132, 132);
-    font-family: 'PT SANS';
-    font-size: 13px;
+    color: #616161;
+    font-family: 'Poppins';
+    line-height: 14px;
+    font-weight: 100;
+    font-size: 11px;
+}
+
+[class^="card-logo"]{
+    width: 58px;
+    height: 58px;
+}
+
+.card-logo-1 > svg{
+    width: 34px;
+    height: 34px;
+}
+
+.card-logo-1{
+    background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-5{
@@ -225,7 +310,7 @@ h5{
     margin-bottom: 110px;
 }
 
-[class^="img-jurusan"]{
+.prot-img{
     width: 200px;
     height: 200px;
 }
@@ -233,7 +318,7 @@ h5{
 [class^="jurusan"]{
     display: flex;
     flex-flow: row;
-    gap: 120px;
+    gap: 70px;
 }
 
 .jurusan{
@@ -244,7 +329,7 @@ h5{
 }
 
 
-.jurusan-2{
+.jurusan-flip-1{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -255,10 +340,15 @@ h5{
     width: 200px;
 }
 
+[class^="img-jurusan-"]{
+    width: 300px;
+    height: 300px;
+}
+
 [class^="number-jurusan"]{
     font-size: 35px;
     margin-bottom: 25px;
-    font-family: 'PT SANS';
+    font-family: 'Poppins';
     color: rgb(220, 220, 220);
 }
 
@@ -266,7 +356,7 @@ h5{
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 1.5px;
-    font-family: 'PT SANS';
+    font-family: 'Poppins';
     color: rgb(0, 0, 0);
 }
 
@@ -276,9 +366,9 @@ h5{
     padding-left: 15px;
     font-size: 13px;
     letter-spacing: 1.5px;
-    font-family: 'PT SANS';
+    font-family: 'Poppins';
     gap: 10px;
-    color: rgb(132, 132, 132);
+    color: #616161;
 }
 
 
@@ -293,7 +383,7 @@ h5{
     border: 2px solid gold;
     padding: 7px;
     width: 150px;
-    font-family: 'PT SANS';
+    font-family: 'Poppins';
 }
 
 .p965-cards-container{
@@ -303,7 +393,8 @@ h5{
 .jurusan-par{
     display: flex;
     flex-flow: column;
-    margin: 0px 20%;
+    margin: 0px 15%;
+    position: relative;
 }
 
 .header-6{
@@ -321,19 +412,22 @@ h5{
     position: relative;
     width: 100vw;
     height: 250px;
-    overflow: hidden; /* Ensure overflow is hidden */
+    overflow: hidden; 
     margin-bottom: 200px;
-}
+} 
 
 [class^="comment-"]{
     position: absolute;
     transform: translateX(calc(450px * var(--i) + var(--r)));
-    width: 450px;
-    height: 220px;
-    box-shadow: 0px 0px 20px #d1d1d1;
-    font-family: 'PT SANS';
+    width: 390px;
+    height: 160px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 40px 0px #0000000D;
+    font-family: 'Poppins';
     display: flex;
     flex-flow: column;
+    padding: 30px;
+    overflow: hidden;
 }
 
 [class^="profile-image"]{
@@ -345,7 +439,6 @@ h5{
 [class^="star-name"]{
     display: flex;
     flex-flow: row;
-    padding: 30px;
     justify-content: space-between;
 }
 
@@ -360,6 +453,15 @@ h5{
     font-size: 13px;
     letter-spacing: 0.9px;
     color: gray;
+}
+
+[class^="the-comment"]{
+        font-family: 'Plus Jakarta Sans';
+        font-weight: 500;
+        font-size: 13.5px;
+        line-height: 1.5;
+        color: #616161;
+        margin-top: 25px;
 }
 
 [class^="long-name"]{
@@ -409,6 +511,7 @@ h5{
 }
 
 
+
 /* CSS Teleport */
 
 @media only screen and (min-width:965px) {
@@ -421,26 +524,34 @@ h5{
     width: 48vw !important;
     height: 100% !important;
     }
+
+}
+
+@media only screen and (max-width:768px) {
+    .desc-1{
+        width: 450px;
+    }
 }
 
 @media only screen and (min-width:700px) {
 
     [class^="sub-header-"]{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     [class^="pra-header-"]{
-        font-size: 32px;
+        font-size: 29px;
     }
 
     .desc-1{
-        font-size: 18px;
+        font-size: 12px;
+        letter-spacing: 1.1px;
     }
 
     h1{font-size: 50px;}
 
     .desc-main-header{
-        font-size: 21px;
+        font-size: 16px;
     }
 
 }
@@ -471,7 +582,7 @@ h5{
 
     [class^="p965-card-item"]{
         width: 220px;
-        height: 150px;
+        height: 250px;
         box-shadow: 0px 0px 20px rgb(206, 206, 206);
         gap: 20px;
         background-color: #ffffff;
@@ -497,17 +608,35 @@ h5{
 
     [class^="p965-card-header"]{
     color: #0f4ea3;
-    font-family: 'PT SANS';
+    font-family: 'Poppins';
     letter-spacing: 2px;
     font-weight: 700;
     font-size: 15px;
-    margin-top: 25px;
+    margin-top: 10px;
     }
 
     [class^="p965-card-desc"]{
-        color: rgb(132, 132, 132);
-        font-family: 'PT SANS';
+        color: #616161;
+        font-family: 'Poppins';
         font-size: 13px;
+    }
+
+    [class^="p965-card-logo"]{
+        width: 58px;
+        height: 58px;
+    }
+
+    .p965-card-logo-1 > svg{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .p965-card-logo-1{
+        background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -543,27 +672,106 @@ h5{
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    gap: 120px;
+    gap: 10px;
     }
 
-    .jurusan-2{
+    .jurusan-par{
+        display: flex;
+        flex-flow: column;
+        margin: 0px 5%;
+    }
+
+    [class^="header-jurusan"]{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        font-family: 'Poppins';
+        color: rgb(0, 0, 0);
+    }
+
+    [class^="description"]{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center ;
+        gap: 50px;
+        padding: 0 10px;
+    }
+
+
+    .jurusan-flip-1{
         display: flex;
         flex-flow: column-reverse;
         justify-content: center;
         align-items: center;
     }
 
+    .pra-header-2{
+        margin-bottom: 30px;
+    }
+
+    .decoration-polka-2{
+        position: absolute;
+        top: 1620px;
+        left: 20px;
+    }
+
 }
 
 @media only screen and (max-width:500px) {
+
     [class^="comment-"]{
-        width: 90%;
+        width: 80%;
+    }
+
+    h1{
+        margin-top: 120px;
+    }
+
+    .star-name{
+        position: relative;
     }
 
     .star{
+        position: absolute;
         display: flex;
         flex-flow: column;
         gap: 20px;
         font-size: 17px;
+        right: 0;
+    }
+
+    .long-name{
+        font-size: 15px;
+    }
+
+    
+    .rank{
+        font-size: 10px;
+    }
+
+    [class^="profile-image"]{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .desc-1{
+        width: 300px;
+    }
+
+    [class^="the-comment"]{
+        margin-top: 15px;
+        width: 90%;
+        font-size: 12.5px;
+        /* position: absolute; */
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+    [class^="pra-header"]{
+        letter-spacing: 0.6px ;
     }
 }
