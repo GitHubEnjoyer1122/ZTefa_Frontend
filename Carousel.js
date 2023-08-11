@@ -56,3 +56,5 @@ commentContainer.addEventListener('click', () => {
 
 // Initialize carousel
 updateCarousel();
+  
+
