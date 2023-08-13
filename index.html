@@ -313,16 +313,17 @@
     </div>
 
 
-
     <div class="comments">
 
-        <button onclick="slideLeft()" class="left-move"><i class="fa fa-arrow-circle-left"></i></button>
-        <button onclick="slideRight()" class="right-move"><i class="fa fa-arrow-circle-right"></i></button>
+        <button class="make-comment" onclick="makeComment()">Make comment</button>
+        <button onclick="slideLeft()" class="left-move">L</button>
+        <button onclick="slideRight()" class="right-move">R</button>
+     
 
-        <div class="comment-1" style="--i:2;--r:100px;"> </div>
+        <div class="comment-1" style="--i:2;--r:100px;"> 1</div>
 
 
-        <div class="comment-2" style="--i:1;--r:50px;"></div>
+        <div class="comment-2" style="--i:1;--r:50px;">2</div>
         
         
         <div class="comment-3" style="--i:0;--r:0;">
@@ -347,12 +348,16 @@
             <div class="the-comment"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est repellendus voluptatem praesentium quos atque, dolorum beatae, in, laudantium ut tenetur fugit sapiente dolor vitae quibusdam veniam provident non tempora. Suscipit!</div>
         </div>
 
-        <div class="comment-4" style="--i:-1;--r:-50px;"></div>
+        <div class="comment-4" style="--i:-1;--r:-50px;">4</div>
 
-        <div class="comment-5" style="--i:-2;--r:-100px;"></div>
+        <div class="comment-5" style="--i:-2;--r:-100px;">5</div>
+        <div class="comment-6" style="--i:-3;--r:-100px;">6</div>
+        <div class="comment-7" style="--i:-4;--r:-100px;">7</div>
+        <div class="comment-8" style="--i:-5;--r:-100px;">8</div>
+        <div class="comment-9" style="--i:-6;--r:-100px;">9</div>
+        <div class="comment-10" style="--i:-7;--r:-100px;">10</div>
+
     </div>
-
-
     
 
     <div w3-include-html="footer.html"></div> 
@@ -392,7 +397,7 @@
     <script src="gsap_animation.js"></script>
     <script src="comment.js"></script>
 
-    <script src="Carousel.js"></script>
+    <script src="Carousel_2.js"></script>
 
     </body>
 </html>

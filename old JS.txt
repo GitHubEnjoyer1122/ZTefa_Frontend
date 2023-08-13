@@ -1,0 +1,86 @@
+const commentContainer = document.querySelector('.comments');
+const commentCards = document.querySelectorAll('[class^="comment-"]');
+const cardCount = commentCards.length;
+
+function updateCarousel() {
+  const gap = parseFloat(getComputedStyle(commentCards[0]).getPropertyValue('--r'));
+
+  commentCards.forEach((card, index) => {
+    
+    const distanceX = (parseFloat(card.style.getPropertyValue('--i'))) * (450 + gap);
+    card.style.transition = 'transform 0.5s, height 0.5s, opacity 0.5s';
+    card.style.transform = `translateX(${distanceX}px)`;
+
+    if (parseFloat(card.style.getPropertyValue('--i')) !== 0) {
+      card.style.height = '100px'
+      card.style.opacity = '0.7'
+    }else if(parseFloat(card.style.getPropertyValue('--i')) === 0){
+      card.style.height = '160px'
+      card.style.opacity = '1'
+    }
+
+    });
+}
+
+
+function moveCarouselInfinite(theComment) {
+  const gap = parseFloat(getComputedStyle(commentCards[0]).getPropertyValue('--r'));
+
+  // console.log(theComment)
+
+    
+    const distanceX = (parseFloat(theComment.style.getPropertyValue('--i'))) * (450 + gap);
+    theComment.style.transform = `translateX(${distanceX}px)`;
+
+    // setTimeout(() => {
+    theComment.style.transition = 'transform 0.5s';
+    // }, 500);
+
+    theComment.style.transition = 'none';
+}
+
+
+function slideLeft() {
+  commentCards.forEach(card => {
+
+    const currentI = parseFloat(card.style.getPropertyValue('--i'));
+      card.style.setProperty('--i', currentI + 1);
+    updateCarousel();
+    
+    if (currentI === 2) {
+      console.log("Im working")
+        card.style.setProperty('--i', currentI - 4)
+        moveCarouselInfinite(card);
+      }
+  });
+
+
+
+}
+
+function slideRight() {
+  commentCards.forEach(card => {
+
+    const currentI = parseFloat(card.style.getPropertyValue('--i'));
+
+    card.style.setProperty('--i', currentI - 1);
+    updateCarousel();
+
+    if (currentI === -2) {
+      card.style.setProperty('--i', currentI + 4)
+      moveCarouselInfinite(card);
+    }
+  });
+
+
+  // commentCards.forEach((card, index) => {
+  //   const currentI = parseFloat(card.style.getPropertyValue('--i'));
+
+  //   console.log("this is parse float: " + index + " " + currentI)
+
+
+  // });
+}
+
+// Initialize carousel
+updateCarousel();

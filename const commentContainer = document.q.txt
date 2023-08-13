@@ -1,10 +1,5 @@
-const commentCardsParent = document.querySelector('.comments-par');
 const commentContainer = document.querySelector('.comments');
 const commentCards = document.querySelectorAll('[class^="comment-"]');
-var commentCards2;
-
-const cardCount = commentCards.length;
-const totalWidth = commentContainer.offsetWidth
 let currentIndex = 2;
 let isShrinked = false;
 
@@ -14,52 +9,32 @@ function updateCarousel() {
   const middleWidth = middleComment.offsetWidth;
 
   commentCards.forEach((card, index) => {
-    const distanceX = getDistanceX(index);
+    const distanceX = (index - currentIndex) * (450 + gap);
+    const distanceY = parseFloat(card.style.getPropertyValue('--r')) || 0;
 
     const isMiddle = index === currentIndex;
     const isNotMiddle = !isMiddle;
 
     const scale = isShrinked && isNotMiddle ? (middleWidth / card.offsetWidth) : 1;
     const opacity = isMiddle ? 1 : 0.7;
-    const height = isMiddle ? '160px' : '100px';
-
-    console.log(index + distanceX)
+    const height = isMiddle ? '160px' : isNotMiddle ? '100px' : '';
 
     card.style.transition = 'transform 0.5s, opacity 0.5s, height 0.5s';
-    card.style.transform = `translate(${distanceX}px) scale(${scale})`;
+    card.style.transform = `translate(${distanceX}px, ${distanceY}px) scale(${scale})`;
     card.style.opacity = opacity;
     card.style.height = height;
   });
 }
 
-function getDistanceX(index) {
-  const distanceFromCurrent = (index - currentIndex) * (450 + parseFloat(getComputedStyle(commentCards[0]).getPropertyValue('--r')));
-  
-  // if (distanceFromCurrent === -2200) {
-  //   console.log("APAKAH INI AKAN DIJALANKAN??")
-  //   distanceFromCurrent + 2750
-  //   return distanceFromCurrent
-  // }
-
-  return distanceFromCurrent;
-}
-
 function slideLeft() {
-  currentIndex = (currentIndex - 1 + cardCount) % cardCount;
-
+  currentIndex = (currentIndex - 1 + commentCards.length) % commentCards.length;
   updateCarousel();
   isShrinked = false; // Reset shrink state
-
-
 }
 
 function slideRight() {
-  currentIndex = (currentIndex + 1) % cardCount;
-
+  currentIndex = (currentIndex + 1) % commentCards.length;
   updateCarousel();
-
-  console.log("TOTAL WIDTHNYA " + totalWidth)
-
   isShrinked = false; // Reset shrink state
 }
 
@@ -71,5 +46,3 @@ commentContainer.addEventListener('click', () => {
 
 // Initialize carousel
 updateCarousel();
-  
-
